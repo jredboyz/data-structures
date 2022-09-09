@@ -10,13 +10,11 @@ var Queue = function() {
 
   someInstance.enqueue = function(value) {
     storage[numkeys++] = value;
-    // Object.assign(someInstance, storage);
   };
 
   someInstance.dequeue = function() {
 
     var saved = storage[nextOut];
-    console.log(saved);
     delete storage[nextOut];
     if (someInstance.size()) {
       nextOut++;
