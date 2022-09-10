@@ -4,9 +4,14 @@ var LinkedList = function() {
   list.tail = null;
 
   list.addToTail = function(value) {
+    let currentNode = Node(value);
+    list.tail = currentNode;
+
   };
 
   list.removeHead = function() {
+    var returnedHead = head
+    list.head = 
   };
 
   list.contains = function(target) {
@@ -25,5 +30,11 @@ var Node = function(value) {
 };
 
 /*
+linkedList.addToTail(4);
+expect(linkedList.tail.value).to.equal(4);
+linkedList.addToTail(5);
+expect(linkedList.tail.value).to.equal(5);
  * Complexity: What is the time complexity of the above functions?
  */
+
+// linkedList = {value: 5, next: {value: 6, next: null}};
